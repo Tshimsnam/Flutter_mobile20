@@ -12,22 +12,26 @@ class User {
   int id;
   String name;
   String email;
+  String phone;
 
   User({
     this.id=-1,
     this.name="",
     this.email="",
+    this.phone="",
   });
 
   factory User.fromJson(Map<String, dynamic> json) => User(
-    id: json["id"],
-    name: json["name"],
-    email: json["email"],
+    id: json["id"] ?? -1,
+    name: json["name"] ?? "",
+    email: json["email"] ?? "",
+    phone: json["telephone"] ?? "",
   );
 
   Map<String, dynamic> toJson() => {
     "id": id,
     "name": name,
     "email": email,
+    "telephone": phone,
   };
 }
