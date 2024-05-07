@@ -13,7 +13,6 @@ class CreateUserRequest{
     required this.confirmPassword,
 });
 
-
   Map<String, dynamic> toJson() => {
     "name": name,
     "email": email,

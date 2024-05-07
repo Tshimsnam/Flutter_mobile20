@@ -1,8 +1,8 @@
-import 'package:elections/user/business/model/User/CreateUserRequest.dart';
 
-import 'package:elections/user/business/model/User/User.dart';
-
-import '../service/UserNetworkService.dart';
+import 'package:elections/user/business/model/user/CreateUserRequest.dart';
+import 'package:elections/user/business/model/user/UpdateUserRequest.dart';
+import 'package:elections/user/business/model/user/User.dart';
+import 'package:elections/user/business/service/UserNetworkService.dart';
 
 class UserNetworkV2 implements UserNetworkService{
   @override
@@ -19,8 +19,8 @@ class UserNetworkV2 implements UserNetworkService{
 
   @override
   Future<String> createUser(CreateUserRequest data) {
-   print("Create user V2");
-   return Future.value("TSHIMS");
+    print("Create user V2");
+    return Future.value("eueuueuueee");
   }
 
   @override
@@ -48,9 +48,9 @@ class UserNetworkV2 implements UserNetworkService{
   }
 
   @override
-  Future<bool> updateUser(String token, data) {
+  Future<bool> updateUser(String token, UpdateUserRequest data) {
     // TODO: implement updateUser
     throw UnimplementedError();
   }
-  
+
 }

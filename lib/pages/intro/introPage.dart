@@ -1,5 +1,5 @@
-import "package:elections/pages/login/loginPage.dart";
 import "package:flutter/material.dart";
+import "../../user/ui/pages/login/loginPage.dart";
 
 class IntroPage extends StatelessWidget {
   @override
